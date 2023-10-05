@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mi primer carrito </title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body>
     <main>
@@ -11,14 +13,17 @@
         <div id="productos"> </div>
     </main>
 
-    <section>
+    <section class="ocultar">
         <h1>
-            <span id="cantidadProductos"></span>
+            <span id="cantidadProductos">0</span>
         </h1>
-        <div id="carrito"> </div>
-        <h2> Total: $ <span id="totalCarrito"></span></h2>
+        <div id="carrito" style="border: 5px solid red"> 
+            <div id="scroll">
+                <div id ="carrito"></div>
+            </div>
+        </div>
+        <h2> Total: $ <span id="totalCarrito">0</span></h2>
     </section>
     <script src="app.js"></script>
-
 </body>
 </html>
