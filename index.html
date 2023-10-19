@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi primer carrito </title>
-
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css"/>
 </head>
 <body>
     <main>
-        <input id="inputBuscar type="text" placeholder="Buscar productos..."/>
+        <input id="inputBuscar" type="text" placeholder="Buscar productos..." />
+        <ul>
+            <li class="boton btnCategoria" data-categoria="Todos">Todos</li>
+            <li class="boton btnCategoria" data-categoria="Thriller">Thriller</li>
+            <li class="boton btnCategoria" data-categoria="Horror">Horror</li>
+            <li class="boton btnCategoria" data-categoria="Family">Family</li>
+            <li class="boton btnCategoria" data-categoria="Fantasy">Fantasy</li>
+            <li class="boton btnCategoria" data-categoria="Musical">Musical</li>
+            <li class="boton btnCategoria" data-categoria="Action">Action</li>
+            <li class="boton btnCategoria" data-categoria="Drama">Drama</li>
+            <li class="boton btnCategoria" data-categoria="Sci-Fi">Sci-Fi</li>  
+        </ul>
         <div id="productos"> </div>
     </main>
 
@@ -24,6 +34,8 @@
         </div>
         <h2> Total: $ <span id="totalCarrito">0</span></h2>
     </section>
-    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script defer src="app.js"></script>
 </body>
 </html>

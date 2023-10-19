@@ -12,25 +12,20 @@ class Producto {
 
   class BaseDeDatos {
     constructor(){
+      //Array para el cataglogo
         this.productos = [];
-        this.agregarRegistro(1, "Manzanas", 400, "Frutas", "../images/manzanas.png");
-        this.agregarRegistro(2, "Bananas", 900, "Frutas", "../images/bananas.png");
-        this.agregarRegistro(3, "Frutillas", 800, "Frutas", "../images/frutillas.png");
-        this.agregarRegistro(4, "Duraznos", 250, "Frutas", "../images/durazno.png");
-        this.agregarRegistro(5, "Frambuesas", 400, "Frutas", "../images/frambuesas.png");
-        this.agregarRegistro(6, "Blueberry", 600, "Frutas", "../images/blueberry.png");
-        this.agregarRegistro(7, "Coco", 400, "Frutas", "../images/coco.png");
-        this.agregarRegistro(8, "Kiwi", 400, "Frutas", "../images/kiwi.png");
-        this.agregarRegistro(9, "Mango", 400, "Frutas", "../images/mango.png");
-        this.agregarRegistro(10, "Maracuya", 400, "Frutas", "../images/maracuya.png");
-        this.agregarRegistro(11, "Sandia", 400, "Frutas", "../images/sandia.png");
-        this.agregarRegistro(12, "Uvas", 400, "Frutas", "../images/uva.png");
+
+        //
+        this.cargarRegistros();
     }
 
-    agregarRegistro(id, nombre, precio, categoria, imagen){
-        const producto = new Producto(id, nombre, precio, categoria, imagen);
-        this.productos.push(producto);
+    async cargarRegistros(){
+      const resultado = await fetch('./json/productos.json');
+      this.productos = await resultado.json();
+      cargarProductos(this.productos);
     }
+
+
 
     traerRegistros() {
         return this.productos;
@@ -41,7 +36,12 @@ class Producto {
     }
 
     registroPorNombre(palabra){
-        return this.productos.filter((producto) => producto.nombre.toLowerCase().includes(palabra.toLowerCase()));
+        return this.productos.filter((producto) => 
+        producto.nombre.toLowerCase().includes(palabra.toLowerCase()));
+    }
+
+    registroPorCategoria(categoria){
+      return this.productos.filter((producto) => producto.categoria ==categoria);
     }
   }
 
@@ -109,7 +109,18 @@ class Producto {
       // Actualizamos los totales
       this.total += producto.precio * producto.cantidad;
       this.cantidadProductos += producto.cantidad;
+
     }
+    if (this.cantidadProductos > 0){
+      //Que boton sea visible
+      botonComprar.style.display = "block";
+    } 
+    else {
+      //Que boton sea no visible
+      botonComprar.style.display = "none";
+    } 
+
+
 
     const botonesQuitar = document.querySelectorAll(".btnQuitar");
     for (const boton of botonesQuitar) {
@@ -126,8 +137,6 @@ class Producto {
   }
 }
 
-// Instanciamos la base de datos
-const bd = new BaseDeDatos();
 // Elementos
 const spanCantidadProductos = document.querySelector("#cantidadProductos");
 const spanTotalCarrito = document.querySelector("#totalCarrito");
@@ -135,9 +144,29 @@ const divProductos = document.querySelector("#productos");
 const divCarrito = document.querySelector("#carrito");
 const inputBuscar = document.querySelector("#inputBuscar");
 const botonCarrito = document.querySelector("section h1");
+const botonComprar = document.querySelector("#botonComprar");
+const botonesCategoria = document.querySelectorAll (".btnCategoria");
+
+
+// Instanciamos la base de datos
+const bd = new BaseDeDatos();
 
 // Instaciamos la clase Carrito
 const carrito = new Carrito();
+
+
+botonesCategoria.forEach((boton) => {
+  boton.addEventListener("click",() => {
+    const categoria = boton.dataset.categoria;
+    if (categoria == "Todos") {
+      cargarProductos(bd.traerRegistros());
+    } else {
+      cargarProductos(bd.registrosPorCategoria(categoria));
+    }
+    const productos =  bd.registrosPorCategoria(boton.dataset.categoria);
+    cargarProductos(productos);
+  });
+});
 
 
 // Mostramos el catálogo de la base de datos apenas carga la página
@@ -155,7 +184,7 @@ function cargarProductos(productos) {
           <img src="img/${producto.imagen}" width="100" />
           <img src="img/${producto.imagen}" />
         </div>
-        <a href="#" class="btnAgregar" data-id="${producto.id}">Agregar al carrito</a>
+        <a href="#" class="btnAgregar" data-id="${producto.id}"> Agregar al carrito</a>
       </div>
     `;
   }
@@ -179,18 +208,19 @@ function cargarProductos(productos) {
 
 
 
-// Buscador
-document.addEventListener("DOMContentLoaded", function () {
-    const inputBuscar = document.getElementById("inputBuscar");
 
-    inputBuscar.addEventListener("input", (event) => {
+// Buscador
+//document.addEventListener("DOMContentLoaded", function(){
+   // const inputBuscar = document.getElementById("inputBuscar");
+
+    inputBuscar.addEventListener("input",event=> {
 
         event.preventDefault();
         const palabra = inputBuscar.value;
-        const productos = bd.registrosPorNombre(palabra);
+        const productos = bd.registroPorNombre(palabra);
         cargarProductos(productos);
     })
-});
+
 
 
 

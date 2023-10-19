@@ -1,0 +1,373 @@
+[
+    {
+        "id": 1,
+        "nombre":"Back to the Future",
+        "precio": 400,
+        "categoria":"Sci-Fi",
+        "imagen": "../images/BackToTheFuture.jpeg"
+    },
+    {
+        "id": 2,
+        "nombre":"Casablanca",
+        "precio": 400,
+        "categoria":"Drama",
+        "imagen": "../images/Casablanca.jpeg"
+    },
+    {
+        "id": 3,
+        "nombre":"Child's Play",
+        "precio": 400,
+        "categoria":"Horror",
+        "imagen": "../images/Chucky.jpeg"
+    },
+    {
+        "id": 4,
+        "nombre":"Frankestein",
+        "precio": 400,
+        "categoria":"Horror",
+        "imagen": "../images/frankestein.jpeg"
+    },
+    {
+        "id": 5,
+        "nombre":"The Godfather",
+        "precio": 400,
+        "categoria":"Drama",
+        "imagen": "../images/godfather.jpeg"
+    },
+    {
+        "id": 6,
+        "nombre":"Grease",
+        "precio": 400,
+        "categoria":"Musical",
+        "imagen": "../images/grease.jpeg"
+    },
+    {
+        "id": 7,
+        "nombre":"Harry Potter",
+        "precio": 400,
+        "categoria":"Fantasy",
+        "imagen": "../images/harrypotter.jpeg"
+    },
+    {
+        "id": 8,
+        "nombre":"Hellreiser",
+        "precio": 400,
+        "categoria":"Horror",
+        "imagen": "../images/hellreiser.jpeg"
+    },
+    {
+        "id": 9,
+        "nombre":"The Birds",
+        "precio": 400,
+        "categoria":"Thriller",
+        "imagen": "../images/Hitchcock-Birds.jpeg"
+    },
+    {
+        "id": 10,
+        "nombre":"Psycho",
+        "precio": 400,
+        "categoria":"Thriller",
+        "imagen": "../images/Hitchcock-Psycho.jpeg"
+    },
+    {
+        "id": 11,
+        "nombre":"2001: A Space Odyssey",
+        "precio": 400,
+        "categoria":"Sci-Fi",
+        "imagen": "../images/Kubrick-2001.jpeg"
+    },
+    {
+        "id": 12,
+        "nombre":"A Clockwork Orange",
+        "precio": 400,
+        "categoria":"Drama",
+        "imagen": "../images/kUBRICK-ORANGE.jpeg"
+    },
+    {
+        "id": 13,
+        "nombre":"The Shining",
+        "precio": 400,
+        "categoria":"Thriller",
+        "imagen": "../images/kUBRICK-Shining.jpeg"
+    },
+    {
+        "id": 14,
+        "nombre":"The Lion King",
+        "precio": 400,
+        "categoria":"Family",
+        "imagen": "../images/lionking.jpeg"
+    },
+    {
+        "id": 15,
+        "nombre":"Finding Nemo",
+        "precio": 400,
+        "categoria":"Family",
+        "imagen": "../images/nemo.jpeg"
+    },
+    {
+        "id": 16,
+        "nombre":"Batman",
+        "precio": 400,
+        "categoria":"",
+        "imagen": "../images/Nolan-Batman.jpeg"
+    },
+    {
+        "id": 17,
+        "nombre":"Inception",
+        "precio": 400,
+        "categoria":"Thriller",
+        "imagen": "../images/Nolan-Inception.jpeg"
+    },
+    {
+        "id": 18,
+        "nombre":"Interstellar",
+        "precio": 400,
+        "categoria":"Sci-Fi",
+        "imagen": "../images/Nolan-Interstellar.jpeg"
+    },
+    {
+        "id": 19,
+        "nombre":"Memento",
+        "precio": 400,
+        "categoria":"Drama",
+        "imagen": "../images/Nolan-Memento.jpeg"
+    },
+    {
+        "id": 20,
+        "nombre":"The Wizard of Oz",
+        "precio": 400,
+        "categoria":"Fantasy",
+        "imagen": "../images/OZ.jpeg"
+    },
+    {
+        "id": 21,
+        "nombre":"Bad Taste",
+        "precio": 400,
+        "categoria":"Sci-Fi",
+        "imagen": "../images/PJ-BadTaste.jpeg"
+    },
+    {
+        "id": 22,
+        "nombre":"The Hobbit",
+        "precio": 400,
+        "categoria":"Fantasy",
+        "imagen": "../images/PJ-Hobbit.jpeg"
+    },
+    {
+        "id": 23,
+        "nombre":"King Kong",
+        "precio": 400,
+        "categoria":"Fantasy",
+        "imagen": "../images/PJ-KINGKONG.jpeg"
+    },
+    {
+        "id": 24,
+        "nombre":"The Lord of the Rings",
+        "precio": 400,
+        "categoria":"Fantasy",
+        "imagen": "../images/PJ-LOTR.jpeg"
+    },
+    {
+        "id": 25,
+        "nombre":"The Pianist",
+        "precio": 400,
+        "categoria":"Drama",
+        "imagen": "../images/Polanski-Pianist.jpeg"
+    },
+    {
+        "id": 26,
+        "nombre":"The Fearless Vampire Killers",
+        "precio": 400,
+        "categoria":"Horror",
+        "imagen": "../images/Polanski-Vampire.jpeg"
+    },
+    {
+        "id": 27,
+        "nombre":"Jackie Brown",
+        "precio": 400,
+        "categoria":"Action",
+        "imagen": "../images/JB.jpeg"
+    },
+    {
+        "id": 28,
+        "nombre":"Kill Bill",
+        "precio": 400,
+        "categoria":"Action",
+        "imagen": "../images/KillBill.jpeg"
+    },
+    {
+        "id": 29,
+        "nombre":"The Hateful Eight",
+        "precio": 400,
+        "categoria":"Action",
+        "imagen": "../images/Hateful-eight.jpeg"
+    },
+    {
+        "id": 30,
+        "nombre":"Good Fellas",
+        "precio": 400,
+        "categoria":"Drama",
+        "imagen": "../images/GoodFellas.jpeg"
+    },
+    {
+        "id": 31,
+        "nombre":"Fantastic Mr. Fox",
+        "precio": 400,
+        "categoria":"Family",
+        "imagen": "../images/Mrfox.jpeg"
+    },
+    {
+        "id": 32,
+        "nombre":"Scream",
+        "precio": 400,
+        "categoria":"Thriller",
+        "imagen": "../images/scream.jpeg"
+    },
+    {
+        "id": 33,
+        "nombre":"Shrek",
+        "precio": 400,
+        "categoria":"Family",
+        "imagen": "../images/shrek.jpeg"
+    },
+    {
+        "id": 34,
+        "nombre":"Shutter Island",
+        "precio": 400,
+        "categoria":"Thriller",
+        "imagen": "../images/ShutterIsland.jpeg"
+    },
+    {
+        "id": 35,
+        "nombre":"Edward Scissorhands",
+        "precio": 400,
+        "categoria":"Sci-Fi",
+        "imagen": "../images/scissorhands.jpeg"
+    },
+    {
+        "id": 36,
+        "nombre":"Taxi Driver",
+        "precio": 400,
+        "categoria":"Action",
+        "imagen": "../images/TaxiDriver.jpeg"
+    },
+    {
+        "id": 37,
+        "nombre":"Charlie and the Chocolate Factory",
+        "precio": 400,
+        "categoria":"Family",
+        "imagen": "../images/TB-charliefactory.jpeg"
+    },
+    {
+        "id": 38,
+        "nombre":"The Conjuring",
+        "precio": 400,
+        "categoria":"Horror",
+        "imagen": "../images/TheConjuring.jpeg"
+    },
+    {
+        "id": 39,
+        "nombre":"The Exorcist",
+        "precio": 400,
+        "categoria":"Horror",
+        "imagen": "../images/TheExorcist.jpeg"
+    },
+    {
+        "id": 40,
+        "nombre":"The Ring",
+        "precio": 400,
+        "categoria":"Horror",
+        "imagen": "../images/thering.jpeg"
+    },
+    {
+        "id": 41,
+        "nombre":"Breakfast at Tifanny's",
+        "precio": 400,
+        "categoria":"Romance",
+        "imagen": "../images/Tifannys.jpeg"
+    },
+    {
+        "id": 42,
+        "nombre":"Titanic",
+        "precio": 400,
+        "categoria":"Drama",
+        "imagen": "../images/titanic.jpeg"
+    },
+    {
+        "id": 43,
+        "nombre":"UP",
+        "precio": 400,
+        "categoria":"Family",
+        "imagen": "../images/UP.jpeg"
+    },
+    {
+        "id": 44,
+        "nombre":"The Wolf of Wall Street",
+        "precio": 400,
+        "categoria":"Drama",
+        "imagen": "../images/Wall-Street.jpeg"
+    },
+    {
+        "id": 45,
+        "nombre":"Alice in Wonderland",
+        "precio": 400,
+        "categoria":"Fantasy",
+        "imagen": "../images/Alice.jpeg"
+    },
+    {
+        "id": 46,
+        "nombre":"Asteroid City",
+        "precio": 400,
+        "categoria":"Drama",
+        "imagen": "../images/AsteroidC.jpeg"
+    },
+    {
+        "id": 47,
+        "nombre":"Inglorious Basterds",
+        "precio": 400,
+        "categoria":"Drama",
+        "imagen": "../images/Basterds.jpeg"
+    },
+    {
+        "id": 48,
+        "nombre":"Beetlejuice",
+        "precio": 400,
+        "categoria":"Fantasy",
+        "imagen": "../images/beetlejuice.jpeg"
+    },
+    {
+        "id": 49,
+        "nombre":"The Grand Budapest Hotel",
+        "precio": 400,
+        "categoria":"Drama",
+        "imagen": "../images/Budapest.jpeg"
+    },
+    {
+        "id": 50,
+        "nombre":"Cape Fear",
+        "precio": 400,
+        "categoria":"Thriller",
+        "imagen": "../images/CapeFear.jpeg"
+    },
+    {
+        "id": 51,
+        "nombre":"Corpse Bride",
+        "precio": 400,
+        "categoria":"Fantasy",
+        "imagen": "../images/CorpseBride.jpeg"
+    },
+    {
+        "id": 52,
+        "nombre":"Django",
+        "precio": 400,
+        "categoria":"Drama",
+        "imagen": "../images/Django.jpeg"
+    },
+    {
+        "id": 53,
+        "nombre":"Isle of Dogs",
+        "precio": 400,
+        "categoria":"Family",
+        "imagen": "../images/IsleDogs.jpeg"
+    }
+]
