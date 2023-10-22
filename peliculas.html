@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieHeaven </title>
+    <link rel="icon" href="./images/logo.jpeg">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"/>
+    <link rel="icon" href="/images/heaven.jpeg">
+    <link rel="stylesheet" href="./css/styles.css"/>
+</head>
+<body>
+    <header>
+        <div>
+            <ul id="lista"> 
+                <li id="lista1"> <a class="lista2" href="#">Peliculas</a></li>
+                <li id ="lista1"> <a class="lista2" href="/pages/home.html">Home</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <main>
+        <input id="inputBuscar" type="text" placeholder="¿Qué clásico te gustaria ver?" />
+        <ul>
+            <li class="boton btnCategoria" data-categoria="Todos">Todos</li>
+            <li class="boton btnCategoria" data-categoria="Thriller">Thriller</li>
+            <li class="boton btnCategoria" data-categoria="Horror">Horror</li>
+            <li class="boton btnCategoria" data-categoria="Family">Family</li>
+            <li class="boton btnCategoria" data-categoria="Fantasy">Fantasy</li>
+            <li class="boton btnCategoria" data-categoria="Musical">Musical</li>
+            <li class="boton btnCategoria" data-categoria="Action">Action</li>
+            <li class="boton btnCategoria" data-categoria="Drama">Drama</li>
+            <li class="boton btnCategoria" data-categoria="Sci-Fi">Sci-Fi</li>  
+        </ul>
+        <div id="productos"> </div>
+    </main>
+
+    <section class="ocultar">
+        <h1>
+            <span id="cantidadProductos">0</span>
+        </h1>
+        <div id="scroll">
+            <div id="carrito">
+            </div>
+        </div>
+
+        <h2>Total: $<span id ="totalCarrito">0</span></h2>
+        <a href="#" id="botonComprar" class="boton" style="width:100%; text-align: center">
+        Comprar</a>
+
+    </section>
+
+    <footer class ="footer">
+        <a href="https://www.facebook.com/">
+            <img src="./images/facebook.svg" class="logo__facebook" alt="icono de facebook con link hacia la app"> 
+        </a>
+        <a href="https://twitter.com/">
+            <img src="./images/twitter.svg" class="logo__twitter" alt="icono de twitter con link hacia la app">
+        </a>
+        <a href="https://www.instagram.com/">
+            <img src="./images/instagram.svg" class="logo__instagram" alt="icono de instagram con link hacia la app">
+        </a>
+        <a href="https://www.whatsapp.com/">
+            <img src="./images/whatsapp.svg" class="logo__instagram" alt="icono de whatsapp con link hacia la app">
+        </a>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script defer src="app.js"></script>
+</body>
+</html>

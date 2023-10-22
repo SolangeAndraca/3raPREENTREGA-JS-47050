@@ -176,7 +176,7 @@
     },
     {
         "id": 26,
-        "nombre":"The Fearless Vampire Killers",
+        "nombre":"The Fearless Vampire",
         "precio": 400,
         "categoria":"Horror",
         "imagen": "../images/Polanski-Vampire.jpeg"
@@ -369,5 +369,26 @@
         "precio": 400,
         "categoria":"Family",
         "imagen": "../images/IsleDogs.jpeg"
+    },
+    {
+        "id": 54,
+        "nombre":"High School Musical",
+        "precio": 400,
+        "categoria":"Musical",
+        "imagen": "../images/HSM.jpeg"
+    },
+    {
+        "id": 55,
+        "nombre":"Scarface",
+        "precio": 400,
+        "categoria":"Action",
+        "imagen": "../images/scarface.jpeg"
+    },
+    {
+        "id": 56,
+        "nombre":"Scary Movie",
+        "precio": 400,
+        "categoria":"Family",
+        "imagen": "../images/scarymovie.jpeg"
     }
 ]

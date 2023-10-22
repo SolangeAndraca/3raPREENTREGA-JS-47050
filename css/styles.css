@@ -4,15 +4,10 @@
     box-sizing: border-box;
 }
 
-/*images{
-    width: 100%;
-    height: 100%;
-}*/
 
 body {
-    font-family: "Inter", sans-serif;
-    background-color: #222;
-    background-image: url(/images/pulpfiction.jpeg);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(14, 44, 51);
 }
 main {
     width: 60%;
@@ -21,14 +16,14 @@ main {
 }
 
 main input {
-    width: 100%;
-    padding: 12px;
-    font-size: 34px;
-    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.05);
+    width: 80%;
+    padding: 5px;
+    font-size: 25px;
+    box-shadow: 0px 0px 14px 0px black;
     border-radius: 10px;
     border: 1px solid black;
     font-weight: 100;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 section {
@@ -40,7 +35,7 @@ section {
     right: 0;
     padding: 30px;
     transition: all 0.2s;
-    background-color: rgb(207, 186, 186);
+    background-color: rgb(227, 124, 68);
 }
 
 section h1 {
@@ -52,16 +47,16 @@ section h1 {
     height: 50px;
     border-radius: 10px;
     cursor: pointer;
-    color: white;
+    color: black;
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
-    background: url("img/carrito.png") no-repeat #a6b6f6;
+    background: url("/images/carrito.jpeg") no-repeat white;
     background-size: 60%;
     background-position: 9px center;
 }
 
 section h1 span {
     display: block;
-    background-color: #d15280;
+    background-color: rgb(227, 124, 68);
     border-radius: 150px;
     padding: 5px;
     width: 30px;
@@ -79,14 +74,14 @@ section h3 {
 .btnAgregar,
 .btnQuitar,
 .boton {
-  color: rgb(221, 206, 206);
-  background-color: #151a2c;
+  color: white;
+  background-color: rgb(227, 124, 68);
   text-decoration: none;
   display: inline-block;
   padding: 10px;
   border-radius: 10px;
   margin: 10px 0;
-  border: 1px solid #244ced;
+  border: 1px solid rgb(14, 44, 51);
   transition: all 0.2s;
   cursor: pointer;
 }
@@ -94,8 +89,13 @@ section h3 {
 .btnAgregar:hover,
 .btnQuitar:hover,
 .boton:hover {
-  border: 1px solid white;
+  border: 1px solid rgb(14, 44, 51);
   scale: 1.05;
+}
+
+.boton.seleccionado{
+    border: 4px solid white;
+    background-color:#cad8cc;
 }
 
 .productoCarrito {
@@ -122,17 +122,30 @@ section h3 {
 }
 
 .producto {
-    border: 1px solid rgba(0, 0, 0, 0.4);
+    background-color: #cad8cc;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 10px 0px 10px;
+    border: 2px solid #000;
+    border-radius: 15px;
+    box-shadow: 10px 10px 15px #0a0909;
+    text-align: center
+}
+    /*border: 1px solid rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     padding: 10px;
     background-color: white;
     text-align: center;
-}
+} */
 
 .producto .precio {
     padding: 10px 0;
     font-size: 20px;
-    background-color: gray;
+    background-color: rgb(14, 44, 51);
     display: inline-block;
     padding: 4px 10px;
     color: white;
@@ -147,15 +160,79 @@ section h3 {
     margin: 20px 0;
 }
 .producto .imagen img {
-    max-height: 100px;
+    height: 170px;
 }
 
-.producto .btnAgregar {
+.producto .btnAgregar,
+.producto .boton {
     margin: auto;
     display: block;
     text-align: center;
 }
 
-.image{
-    background-image: url(./images/pulpfiction.jpeg)
+.producto:hover{
+    border: 1px solid rgb(14, 44, 51);
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
+}
+
+.producto h2{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 250px;
+}
+
+#scroll{
+    max-height: 96%;
+    overflow-y: auto;
+    padding-left: 5px;
+}
+
+
+.lista2 {
+    font-size: 14px;
+    text-align:center;
+    display:block;
+    color: white;
+    background-color: #cad8cc;
+    padding: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+} 
+
+
+.logo__facebook,
+.logo__twitter,
+.logo__instagram {
+    width:40%;
+    padding: 1%;
+    height: 100px;
+}
+
+.footer{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    background-color: #cad8cc
+}
+
+.class-carousel{
+    position: relative;
+    width: 100%;
+    height: 0%;
+}
+#texto_superpuesto{
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background: transparent;
+    color: white;
+    padding: 10px;
+    z-index:0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+
 }
